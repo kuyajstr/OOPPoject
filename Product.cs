@@ -8,16 +8,23 @@ namespace OOP_project
 {
     class Product
     {
-        //Fields: string: Name, Description, Price, Manufacturer, and int:Items
-
         public string Name;
         public string Description;
         public decimal Price;
         public string Manufacturer;
         public int Items;
+        public decimal MonthlyInterestRate;
 
-        void DeductItems(int items)
-        { }
+
+        public void DeductItems(int items = 0)
+        {
+            if (items != 0)
+                Items = Items - items;
+            else
+                Items--;
+        }
+
+
     }
 
 }
