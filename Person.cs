@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_project
+namespace OOP_Project
 {
-    class Person
+    public class Person
     {
         public string FirstName;
         public string MiddleName;
@@ -23,12 +23,15 @@ namespace OOP_project
 
         public string GetFullName()
         {
-            MiddleName = MiddleName.First().ToString().ToUpper();
+            if (MiddleName == "")
+                MiddleName = "";
+            else
+                MiddleName = MiddleName.First().ToString().ToUpper() + ". ";
 
             string[] separatedFirstName = FirstName.Split(' ');
             string capitalizedFirstName = "";
 
-            if (FirstName.Contains(' '))
+            if (FirstName.Contains(" "))
             {
                 for (int i = 0; i < separatedFirstName.Length; i++)
                 {
@@ -39,7 +42,7 @@ namespace OOP_project
             }
             else capitalizedFirstName = FirstName.First().ToString().ToUpper() + FirstName.Substring(1).ToLower() + " ";
 
-            string [] separatedLastName = LastName.Split(' ');
+            string[] separatedLastName = LastName.Split(' ');
             string capitalizedLastName = "";
 
             if (LastName.Contains(' '))
@@ -54,13 +57,21 @@ namespace OOP_project
             else capitalizedLastName = LastName.First().ToString().ToUpper() + LastName.Substring(1).ToLower();
 
 
-            return capitalizedFirstName + MiddleName + ". " + capitalizedLastName;
+            return String.Format(capitalizedFirstName + MiddleName + capitalizedLastName);
 
         }
 
-        public int GetAge()
+        //public int GetAge()
+        //{
+        //    return Calculation.CalculateAge(BirthDate);
+        //}
+
+        public string CapitalizeName(string name)
         {
-            return Calculation.CalculateAge(BirthDate);
+
+
+
+            return "";
         }
     }
 }

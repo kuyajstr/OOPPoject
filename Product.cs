@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_project
+namespace OOP_Project
 {
-    class Product
+    public class Product
     {
         public string Name;
         public string Description;
