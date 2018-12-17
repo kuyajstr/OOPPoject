@@ -1,0 +1,97 @@
+﻿<Window x:Class="OOP_Project.AddCustomer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OOP_Project"
+        mc:Ignorable="d"
+        Title="AddCustomer" Height="290" Width="625">
+    <Grid>
+                
+        <!--label-->
+        
+        <Label Content="First Name" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               Margin="20,20,0,0"
+               FontSize="16"
+               Height="30"/>
+
+        <Label Content="Middle Name" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               Margin="250,20,0,0"
+               FontSize="16"/>
+
+        <Label Content="Last Name" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               Margin="420,20,0,0"
+               FontSize="16"/>
+
+        <Label Content="Birthdate" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               Margin="40,100,0,0"
+               FontSize="16"/>
+
+        <Label Content="Address" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               Margin="195,100,0,0"
+               FontSize="16"/>
+        
+        
+        <!--text box-->
+        
+        <TextBox Name="txtFirstName"
+                 HorizontalAlignment="Left" 
+                 Height="30" 
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top" 
+                 Width="200" 
+                 Margin="30,50,0,0"/>
+
+        <TextBox Name="txtMiddleName"
+                 HorizontalAlignment="Left" 
+                 Height="30" 
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top" 
+                 Width="150" 
+                 Margin="260,50,0,0"/>
+
+        <TextBox Name="txtLastName"
+                 HorizontalAlignment="Left" 
+                 Height="30" 
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top" 
+                 Width="150" 
+                 Margin="430,50,0,0"/>
+
+        <TextBox Name="txtAddress"
+                 HorizontalAlignment="Left" 
+                 Height="30" 
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top" 
+                 Width="375" 
+                 Margin="205,130,0,0"/>
+
+        <!--others-->
+        
+        <DatePicker Name="dpBirthdate"
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Height="30" FontSize="16"
+                    Margin="50,130,0,0"/>
+        
+        <Button Content="Add Customer" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Top" 
+                Width="150" 
+                Height="50"
+                FontSize="20" Margin="0,180,0,0"/>
+
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,49 @@
+﻿<Window x:Class="OOP_Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OOP_Project"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="350"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid >
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFABC1D1" Offset="0"/>
+                <GradientStop Color="#FF329EE8" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        
+        <!--add, inventory, listbox-->
+
+        <Button Content="Add Transaction" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Width="150" 
+                Margin="100,25,0,0" 
+                Height="40" 
+                FontSize="18" Grid.ColumnSpan="2"/>
+
+        <Button Content="Inventory" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Width="150" 
+                Margin="100,75,0,0" 
+                Height="40" 
+                FontSize="18" Grid.ColumnSpan="2"/>
+
+        <ListBox HorizontalAlignment="Left" 
+                 Height="250" 
+                 VerticalAlignment="Top" 
+                 Width="250" 
+                 Margin="50,125,0,0" Grid.ColumnSpan="2"/>
+
+
+
+
+
+
+    </Grid>
+</Window>
