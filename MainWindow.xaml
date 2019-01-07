@@ -5,45 +5,42 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OOP_Project"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="332.552"
-        WindowStartupLocation="CenterScreen">
-
+        Title="MainWindow" Height="450" Width="450">
     <Grid>
-        <Border BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="265" Margin="29,61,0,0" VerticalAlignment="Top" Width="260"/>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFABC1D1" Offset="0"/>
+                <GradientStop Color="#FF329EE8" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
 
-        <Label Content="Customers Information" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,5,0,0" RenderTransformOrigin="00,0" FontSize="30" FontStyle="Italic"/>
-        <Label Content="First Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,76,0,0"/>
-        <Label Content="Middle Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,101,0,0"/>
-        <Label Content="Last Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,126,0,0"/>
-        <Label Content="Birthdate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,151,0,0"/>
-        <Label Content="Address" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,176,0,0"/>
-        <Label Content="Jewelry Purchased" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,226,0,0"/>
-        <Label Content="No. of Items" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,251,0,0"/>
-        <Label Content="Due Date" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="34,276,0,0"/>
+        <Grid VerticalAlignment="Center"
+              HorizontalAlignment="Center">
 
-        <!--//input-->
-        <TextBox Name="txtFirstName" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="159,76,0,0" />
-        <TextBox Name="txtMiddletName" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="159,101,0,0"/>
-        <TextBox Name="txtLasttName" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="159,126,0,0"/>
-        
-        <!--date box-->
-        
-        <TextBox Name="txtAddress" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="159,176,0,0"/>
-        <TextBox Name="txtNoOfItems" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="159,251,0,0"/>
-        <DatePicker Name="dpBirthdate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="159,150,0,0" Width="120"/>
-        <DatePicker Name="dpDueDate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="159,275,0,0" Width="120"/>
+            <Button Content="Add Transaction" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Width="150" 
+                Margin="50,0,0,0" 
+                Height="40" 
+                FontSize="18" Click="Button_Click"/>
 
-        <!--combo box-->
-        <Button Content="Add Transaction" HorizontalAlignment="Left" VerticalAlignment="Top" Width="175" Margin="70,350,0,0" Click="Button_Click" Height="50" FontSize="20"/>
-        <ComboBox Name="cmdJewelry" HorizontalAlignment="Left" Margin="159,226,0,0" VerticalAlignment="Top" Width="120">
-            <ComboBoxItem Content="Necklace"/>
-            <ComboBoxItem Content="Bracelet"/>
-            <ComboBoxItem Content="Ring"/>
-            <ComboBoxItem Content="Earrings"/>
-        </ComboBox>
+            <Button Content="Inventory" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Width="150" 
+                Margin="50,50,0,0" 
+                Height="40" 
+                FontSize="18" Click="Button_Click_1"/>
 
+            <ListBox 
+                Name="lstMain"
+                HorizontalAlignment="Left" 
+                Height="250" 
+                VerticalAlignment="Top" 
+                Width="250" 
+                Margin="0,100,0,0"/>
 
-
-
+        </Grid>
     </Grid>
 </Window>

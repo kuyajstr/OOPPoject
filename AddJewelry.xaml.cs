@@ -14,14 +14,12 @@ using System.Windows.Shapes;
 
 namespace OOP_Project
 {
-
-    public partial class MainWindow : Window
+    /// <summary>
+    /// Interaction logic for AddJewelry.xaml
+    /// </summary>
+    public partial class AddJewelry : Window
     {
-        public Product Customer = new Product();
-        
-
-
-        public MainWindow()
+        public AddJewelry()
         {
             InitializeComponent();
         }
@@ -30,19 +28,9 @@ namespace OOP_Project
         {
             this.Hide();
 
-            AddTransaction AddTrans = new AddTransaction();
+            MainWindow Main = new MainWindow();
 
-            AddTrans.Show();
-
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            this.Hide();
-
-            AddJewelry Jewelry = new AddJewelry();
-
-            Jewelry.Show();
+            Main.Show();
         }
     }
 }
