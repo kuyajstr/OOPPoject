@@ -63,6 +63,10 @@
     <Compile Include="AddTransaction.xaml.cs">
       <DependentUpon>AddTransaction.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Calculation.cs" />
+    <Compile Include="Data.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Product.cs" />
     <Page Include="AddCustomer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

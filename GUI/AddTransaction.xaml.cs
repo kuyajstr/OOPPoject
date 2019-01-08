@@ -23,5 +23,29 @@ namespace OOP_Project
         {
             InitializeComponent();
         }
+
+        private void cmbCustomer_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void btnAddCustomer_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+
+            AddCustomer AddCustomer = new AddCustomer();
+
+            AddCustomer.Show();
+
+        }
+
+        private void btnTransaction_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+
+            MainWindow Main = new MainWindow();
+
+            Main.Show();
+        }
     }
 }

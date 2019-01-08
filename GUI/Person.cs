@@ -23,12 +23,15 @@ namespace OOP_Project
 
         public string GetFullName()
         {
-            MiddleName = MiddleName.First().ToString().ToUpper();
+            if (MiddleName == "")
+                MiddleName = "";
+            else
+                MiddleName = MiddleName.First().ToString().ToUpper() + ". ";
 
             string[] separatedFirstName = FirstName.Split(' ');
             string capitalizedFirstName = "";
 
-            if (FirstName.Contains(' '))
+            if (FirstName.Contains(" "))
             {
                 for (int i = 0; i < separatedFirstName.Length; i++)
                 {
@@ -39,7 +42,7 @@ namespace OOP_Project
             }
             else capitalizedFirstName = FirstName.First().ToString().ToUpper() + FirstName.Substring(1).ToLower() + " ";
 
-            string [] separatedLastName = LastName.Split(' ');
+            string[] separatedLastName = LastName.Split(' ');
             string capitalizedLastName = "";
 
             if (LastName.Contains(' '))
@@ -54,7 +57,7 @@ namespace OOP_Project
             else capitalizedLastName = LastName.First().ToString().ToUpper() + LastName.Substring(1).ToLower();
 
 
-            return capitalizedFirstName + MiddleName + ". " + capitalizedLastName;
+            return String.Format(capitalizedFirstName + MiddleName + capitalizedLastName);
 
         }
 
@@ -62,5 +65,6 @@ namespace OOP_Project
         {
             return Calculation.CalculateAge(BirthDate);
         }
+
     }
 }
