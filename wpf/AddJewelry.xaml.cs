@@ -15,25 +15,13 @@ using System.Windows.Shapes;
 namespace OOP_Project
 {
     /// <summary>
-    /// Interaction logic for TransactionWindow.xaml
+    /// Interaction logic for AddJewelry.xaml
     /// </summary>
-    public partial class TransactionWindow : Window
+    public partial class AddJewelry : Window
     {
-        public Person Customer;
-        public Product Jewelry;
-        public TransactionWindow()
+        public AddJewelry()
         {
             InitializeComponent();
         }
-
-        private void Window_loaded(object sender, RoutedEventArgs e)
-        {
-            MainWindow main = new MainWindow();
-
-            this.lstDetails.Items.Add(Customer.GetFullName() + " " + Jewelry.Name);
-
-        }
-
-
     }
 }

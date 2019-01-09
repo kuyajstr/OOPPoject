@@ -7,13 +7,7 @@
         mc:Ignorable="d"
         Title="AddCustomer" Height="290" Width="625">
     <Grid>
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FFABC1D1" Offset="0"/>
-                <GradientStop Color="#FF329EE8" Offset="1"/>
-            </LinearGradientBrush>
-        </Grid.Background>
-        
+                
         <!--label-->
         
         <Label Content="First Name" 
@@ -56,7 +50,7 @@
                  TextWrapping="Wrap"
                  VerticalAlignment="Top" 
                  Width="200" 
-                 Margin="30,50,0,0" TextChanged="txtFirstName_TextChanged"/>
+                 Margin="30,50,0,0"/>
 
         <TextBox Name="txtMiddleName"
                  HorizontalAlignment="Left" 
@@ -72,8 +66,7 @@
                  TextWrapping="Wrap"
                  VerticalAlignment="Top" 
                  Width="150" 
-                 Margin="430,50,0,0" 
-                 TextChanged="txtLastName_TextChanged"/>
+                 Margin="430,50,0,0"/>
 
         <TextBox Name="txtAddress"
                  HorizontalAlignment="Left" 
@@ -84,21 +77,19 @@
                  Margin="205,130,0,0"/>
 
         <!--others-->
-
-        <DatePicker Name="dpBirthDate"
+        
+        <DatePicker Name="dpBirthdate"
                     HorizontalAlignment="Left" 
                     VerticalAlignment="Top" 
                     Height="30" FontSize="16"
                     Margin="50,130,0,0"/>
         
-        <Button Name="btnAddCustomer"
-                Content="Add Customer" 
-                HorizontalAlignment="Left" 
+        <Button Content="Add Customer" 
+                HorizontalAlignment="Center" 
                 VerticalAlignment="Top" 
                 Width="150" 
                 Height="50"
-                FontSize="20" Margin="250,180,0,0" 
-                Click="btnAddCustomer_Click"/>
+                FontSize="20" Margin="0,180,0,0"/>
 
 
 

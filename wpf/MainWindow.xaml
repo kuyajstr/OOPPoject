@@ -5,42 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OOP_Project"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="450">
-    <Grid>
+        Title="MainWindow" Height="450" Width="350"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid >
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="#FFABC1D1" Offset="0"/>
                 <GradientStop Color="#FF329EE8" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
+        
+        <!--add, inventory, listbox-->
 
-        <Grid VerticalAlignment="Center"
-              HorizontalAlignment="Center">
-
-            <Button Content="Add Transaction" 
+        <Button Content="Add Transaction" 
                 HorizontalAlignment="Left" 
                 VerticalAlignment="Top" 
                 Width="150" 
-                Margin="50,0,0,0" 
+                Margin="100,25,0,0" 
                 Height="40" 
-                FontSize="18" Click="Button_Click"/>
+                FontSize="18" Grid.ColumnSpan="2"/>
 
-            <Button Content="Inventory" 
+        <Button Content="Inventory" 
                 HorizontalAlignment="Left" 
                 VerticalAlignment="Top" 
                 Width="150" 
-                Margin="50,50,0,0" 
+                Margin="100,75,0,0" 
                 Height="40" 
-                FontSize="18" Click="Button_Click_1"/>
+                FontSize="18" Grid.ColumnSpan="2"/>
 
-            <ListBox 
-                Name="lstMain"
-                HorizontalAlignment="Left" 
-                Height="250" 
-                VerticalAlignment="Top" 
-                Width="250" 
-                Margin="0,100,0,0"/>
+        <ListBox HorizontalAlignment="Left" 
+                 Height="250" 
+                 VerticalAlignment="Top" 
+                 Width="250" 
+                 Margin="50,125,0,0" Grid.ColumnSpan="2"/>
 
-        </Grid>
+
+
+
+
+
     </Grid>
 </Window>

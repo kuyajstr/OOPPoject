@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP_Project
 {
-    class Calculation
+    public class Calculation
     {
         public static int CalculateAge(string birthDate, bool returnInMonths = false )
         {
