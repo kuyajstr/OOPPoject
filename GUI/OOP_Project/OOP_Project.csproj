@@ -64,7 +64,6 @@
       <DependentUpon>AddTransaction.xaml</DependentUpon>
     </Compile>
     <Compile Include="Calculation.cs" />
-    <Compile Include="CustomerArray.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Product.cs" />

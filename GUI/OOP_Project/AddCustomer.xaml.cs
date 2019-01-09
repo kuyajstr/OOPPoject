@@ -19,6 +19,9 @@ namespace OOP_Project
     /// </summary>
     public partial class AddCustomer : Window
     {
+        public MainWindow main;
+
+
         public AddCustomer()
         {
             InitializeComponent();
@@ -31,20 +34,24 @@ namespace OOP_Project
 
         private void btnAddCustomer_Click(object sender, RoutedEventArgs e)
         {
-            //string FirstName = this.txtFirstName.Text;
-            //string MiddleName = this.txtMiddleName.Text;
-            //string LastName = this.txtLastName.Text;
+            AddTransaction t2 = new AddTransaction();
+            t2.cmbCustomer.Items.Add(txtFirstName);
+            //main.Name.Add
 
-            //Person Customer = new Person(FirstName, LastName, MiddleName);
+            ////string FirstName = this.txtFirstName.Text;
+            ////string MiddleName = this.txtMiddleName.Text;
+            ////string LastName = this.txtLastName.Text;
 
-            //Customer.BirthDate = this.dpBirthDate.Text;
-            //Customer.Address = this.txtAddress.Text;
+            ////Person Customer = new Person(FirstName, LastName, MiddleName);
 
-            Data Customer = new Data();
+            ////Customer.BirthDate = this.dpBirthDate.Text;
+            ////Customer.Address = this.txtAddress.Text;
+
+            //Data Customer = new Data();
 
             
             AddTransaction AddCustomer = new AddTransaction();
-            AddCustomer.cmbCustomer.Items.Add(Customer.GetCustomer());
+            //AddCustomer.cmbCustomer.Items.Add(Customer.GetCustomer());
 
 
             AddCustomer.Show();

@@ -17,6 +17,10 @@ namespace OOP_Project
 
     public partial class MainWindow : Window
     {
+        List<string> names = new List<string>();
+
+        public MainWindow m1 = new MainWindow();
+        public AddTransaction t1 = new AddTransaction();
 
         public MainWindow()
         {
@@ -25,19 +29,15 @@ namespace OOP_Project
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            AddTransaction AddTrans = new AddTransaction();
-
-            AddTrans.Show();
-            this.Close();
-
+            t1.Main = this;
+            t1.Show();
+            this.Hide();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            AddJewelry Jewelry = new AddJewelry();
-
-            Jewelry.Show();
-            this.Close();
+            //Jewelry.Show();
+            //this.Close();
         }
     }
 }

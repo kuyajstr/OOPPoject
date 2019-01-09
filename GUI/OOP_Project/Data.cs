@@ -9,21 +9,21 @@ namespace OOP_Project
     class Data
     {
 
-        public string GetCustomer()
-        {
-            AddCustomer GetCustomer = new AddCustomer();
+        //public string GetCustomer()
+        //{
+        //    AddCustomer GetCustomer = new AddCustomer();
 
-            string FirstName = GetCustomer.txtFirstName.Text;
-            string MiddleName = GetCustomer.txtMiddleName.Text;
-            string LastName = GetCustomer.txtLastName.Text;
+        //    string FirstName = GetCustomer.txtFirstName.Text;
+        //    string MiddleName = GetCustomer.txtMiddleName.Text;
+        //    string LastName = GetCustomer.txtLastName.Text;
 
-            Person Customer = new Person(FirstName, LastName, MiddleName);
+        //    Person Customer = new Person(FirstName, LastName, MiddleName);
 
-            Customer.BirthDate = GetCustomer.dpBirthDate.Text;
-            Customer.Address = GetCustomer.txtAddress.Text;
+        //    Customer.BirthDate = GetCustomer.dpBirthDate.Text;
+        //    Customer.Address = GetCustomer.txtAddress.Text;
 
-            return Customer.GetFullName();
+        //    return Customer.GetFullName();
 
-        }
+        //}
     }
 }

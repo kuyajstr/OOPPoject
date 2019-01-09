@@ -19,6 +19,9 @@ namespace OOP_Project
     /// </summary>
     public partial class AddTransaction : Window
     {
+        public MainWindow Main;
+        //AddTransaction t2;
+
         public AddTransaction()
         {
             InitializeComponent();
@@ -31,21 +34,15 @@ namespace OOP_Project
 
         private void btnAddCustomer_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
-
-            AddCustomer AddCustomer = new AddCustomer();
-
-            AddCustomer.Show();
+            //AddCustomer c1;
+            //c1.Main = this;
 
         }
 
         private void btnTransaction_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
-
-            MainWindow Main = new MainWindow();
-
             Main.Show();
+            this.Close();
         }
 
         private void Quantity_TextChanged(object sender, TextChangedEventArgs e)
