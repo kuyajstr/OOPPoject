@@ -10,17 +10,20 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace OOP_Project
 {
-
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
     public partial class MainWindow : Window
     {
-        public Product Customer = new Product();
+        //public Person Customer;
+        TransactionWindow transwin = new TransactionWindow();
+
         
-
-
         public MainWindow()
         {
             InitializeComponent();
@@ -28,21 +31,20 @@ namespace OOP_Project
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Hide();
+            string FirstName = this.txtFirstName.Text;
+            string MiddleName = this.txtMiddletName.Text; ;
+            string LastName = this.txtLasttName.Text; ;
+            string BirthDate = this.dpBirthdate.Text; ;
+            string Address = this.txtAddress.Text; ;
+            transwin.Customer = new Person(FirstName, LastName, MiddleName);
 
-            AddTransaction AddTrans = new AddTransaction();
+            transwin.Jewelry = new Product();
+            transwin.Jewelry.Name = this.cmdJewelry.Text;
 
-            AddTrans.Show();
+
+            transwin.Show();
 
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            this.Hide();
-
-            AddJewelry Jewelry = new AddJewelry();
-
-            Jewelry.Show();
-        }
     }
 }

@@ -61,10 +61,17 @@ namespace OOP_Project
 
         }
 
-        public int GetAge()
-        {
-            return Calculation.CalculateAge(BirthDate);
-        }
+        //public int GetAge()
+        //{
+        //    return Calculation.CalculateAge(BirthDate);
+        //}
 
+        public string CapitalizeName(string name)
+        {
+
+
+
+            return "";
+        }
     }
 }
