@@ -47,5 +47,17 @@ namespace OOP_Project
 
             Main.Show();
         }
+
+        private void Quantity_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+
+
+        }
+
+        private void Price_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            //pricse
+        }
     }
 }

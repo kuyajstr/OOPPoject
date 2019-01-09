@@ -14,26 +14,30 @@ using System.Windows.Shapes;
 
 namespace OOP_Project
 {
-    /// <summary>
-    /// Interaction logic for TransactionWindow.xaml
-    /// </summary>
-    public partial class TransactionWindow : Window
+
+    public partial class MainWindow : Window
     {
-        public Person Customer;
-        public Product Jewelry;
-        public TransactionWindow()
+
+        public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Window_loaded(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow();
+            AddTransaction AddTrans = new AddTransaction();
 
-            this.lstDetails.Items.Add(Customer.GetFullName() + " " + Jewelry.Name);
+            AddTrans.Show();
+            this.Close();
 
         }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            AddJewelry Jewelry = new AddJewelry();
 
+            Jewelry.Show();
+            this.Close();
+        }
     }
 }

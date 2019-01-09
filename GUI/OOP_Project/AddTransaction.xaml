@@ -72,13 +72,13 @@
                 VerticalAlignment="Top"
                 HorizontalAlignment="Left"
                 Width="120" Height="30"
-                Margin="235,120,0,0"/>
+                Margin="235,120,0,0" TextChanged="Quantity_TextChanged"/>
 
             <TextBox Name="Price"
                 VerticalAlignment="Top"
                 HorizontalAlignment="Left"
                 Width="160" Height="30"
-                Margin="145,170,0,0"/>
+                Margin="145,170,0,0" TextChanged="Price_TextChanged"/>
 
             <DatePicker Name="dpPromisedDate"
                 VerticalAlignment="Top"

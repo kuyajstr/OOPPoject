@@ -31,17 +31,21 @@ namespace OOP_Project
 
         private void btnAddCustomer_Click(object sender, RoutedEventArgs e)
         {
-            string FirstName = this.txtFirstName.Text;
-            string MiddleName = this.txtMiddleName.Text;
-            string LastName = this.txtLastName.Text;
+            //string FirstName = this.txtFirstName.Text;
+            //string MiddleName = this.txtMiddleName.Text;
+            //string LastName = this.txtLastName.Text;
 
-            Person Customer = new Person(FirstName, LastName, MiddleName);
+            //Person Customer = new Person(FirstName, LastName, MiddleName);
 
-            Customer.BirthDate = this.dpBirthDate.Text;
-            Customer.Address = this.txtAddress.Text;
+            //Customer.BirthDate = this.dpBirthDate.Text;
+            //Customer.Address = this.txtAddress.Text;
 
+            Data Customer = new Data();
+
+            
             AddTransaction AddCustomer = new AddTransaction();
-            AddCustomer.cmbCustomer.Items.Add(Customer.GetFullName());
+            AddCustomer.cmbCustomer.Items.Add(Customer.GetCustomer());
+
 
             AddCustomer.Show();
             this.Close();
