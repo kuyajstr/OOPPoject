@@ -17,9 +17,9 @@ namespace OOP_Project
 
     public partial class MainWindow : Window
     {
-        List<string> names = new List<string>();
+        //List<string> names = new List<string>();
 
-        public MainWindow m1 = new MainWindow();
+        //public MainWindow m1 = new MainWindow();
         public AddTransaction t1 = new AddTransaction();
 
         public MainWindow()
